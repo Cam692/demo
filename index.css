@@ -1,0 +1,210 @@
+
+/* // 实现rem适配 */
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: 42.66px !important;
+    }
+  }
+  
+  @media screen and (min-width: 1920px) {
+    html {
+      font-size: 80px !important;
+    }
+  }
+/* 公共样式 */
+*{
+    margin: 0;
+    padding: 0;
+    /* font-size: 0.35rem; */
+    color: #fff;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+/* 字体大小 */
+a{
+    font-size: 15px;
+    text-decoration: none;
+}
+h4{
+    font-size: 20px;
+    color: #fff;
+}
+
+body{
+    /* height:100vh;
+    width: 100vw; */
+    background-image: url(./IMAGE/bg.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+    background-color:red;
+
+}
+
+.logo{
+    background-image: url(./IMAGE/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1.1rem 0.25rem 0;
+}
+/* 背景边框图片 */
+.panel {
+    /* 相对定位 */
+    position: relative;
+    border: 15px solid transparent;
+    /* 边框背景宽度 */
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    /* 边框背景来源 */
+    border-image-source: url(./IMAGE/border.png);
+    /* 边框裁剪 */
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    margin: 10px;
+    /* background-color: aqua; */
+  }
+/* 边框中内容显示区域 */
+.nr{
+    position: absolute;
+    top: -0.6375rem;
+    left: -1.65rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    padding: 0.3rem 0.45rem;
+    /* background-color: aqua; */
+}
+
+.left_top{
+    height: 42.5px;
+}
+
+.left_top ul{
+    display: flex;
+    /* flex-direction: column; */
+}
+.left_top li{
+    flex: 1;
+}
+.left_top li span{
+    font-size: 0.2rem
+}
+
+
+
+.left_center{
+    height: 360px;
+}
+
+.left_center_top li{
+    display: inline-block;
+    padding: 3px 15px;
+    font-size: 15px;
+}
+.left_center_top li:first-child{
+    border-right: 1px solid white;
+    padding-left: 0;
+}
+
+.left_center_center{
+    display: flex;
+    height: 37px;
+    margin-top: 5px;
+    /* width: 100%; */
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-items: center;
+}
+.left_center_center span{
+    flex: 1;
+
+}
+.left_center_center span:nth-child(2){
+    flex: 2;
+}
+
+
+.left_center_bottom{
+    display: flex;
+    height: 300px;
+    margin-top: 5px;
+    /* width: 100%; */
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    flex-direction: column;
+    overflow: hidden;
+}
+.left_center_bottom>div{
+    flex: 1;
+    display: flex;
+    /* height: 183px; */
+    
+    /* background-color: #fff; */
+}
+
+.left_center_bottom>div>span{
+    flex: 1;
+    /* display: flex; */
+}
+.left_center_bottom>div>span:nth-child(2){
+    flex: 2;
+    text-overflow: ellipsis
+    /* display: flex; */
+}
+.left_center_bottom>div:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.left_bottom{
+    height: 240px;
+}
+
+.left_bottom_bottom_right{
+    background-image: url(./IMAGE/rect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* 饼图 */
+#pie{
+    height: 200px;
+    width: 200px;
+}
+
+
+/* 右边显示区域 */
+.right_top{
+    height: 70px;
+}
+.right_top_top{
+    flex: 1;
+}
+.right_top_top li{
+    padding-right: 0px;
+    padding: 3px 0 0 21px;
+    /* background-color: #fff; */
+    border-right: 1px solid white;
+}
+.right_top_top li:last-child{
+    border-right: none;
+}
+.right_top_center{
+    flex: 1;
+    margin: 10px 0;
+}
+.right_top_bottom{
+    flex: 1;
+}
+
+.right_center{
+    height: 140px;
+}
+.right_center_top{
+    height: 60px;
+}
+.right_center_top li{
+    padding: 2px 10px;
+    /* background-color: aliceblue; */
+}
+
